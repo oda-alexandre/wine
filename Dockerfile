@@ -46,4 +46,4 @@ sudo rm -rf /var/cache/apt/archives/* && \
 sudo rm -rf /var/lib/apt/lists/*
 
 # COMMANDE AU DEMARRAGE DU CONTENEUR
-CMD winecfg
+CMD /bin/bash
