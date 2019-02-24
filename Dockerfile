@@ -39,7 +39,7 @@ export PATH=$PATH:/opt/wine-stable/bin
 
 # NETTOYAGE
 RUN sudo apt-get --purge autoremove -y \
-wget
+wget \
 software-properties-common \
 apt-transport-https \
 gnupg && \
