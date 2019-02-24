@@ -39,7 +39,11 @@ export PATH=$PATH:/opt/wine-stable/bin
 
 # NETTOYAGE
 RUN sudo apt-get --purge autoremove -y \
-wget
+wget && \
+sudo apt-get autoclean -y && \
+sudo rm /etc/apt/sources.list && \
+sudo rm -rf /var/cache/apt/archives/* && \
+sudo rm -rf /var/lib/apt/lists/*
 
 # COMMANDE AU DEMARRAGE DU CONTENEUR
 CMD /bin/bash
