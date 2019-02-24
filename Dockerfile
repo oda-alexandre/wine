@@ -38,7 +38,8 @@ winehq-stable && \
 export PATH=$PATH:/opt/wine-stable/bin
 
 # NETTOYAGE
-RUN sudo apt-get --purge autoremove -y
+RUN sudo apt-get --purge autoremove -y \
+wget
 
 # COMMANDE AU DEMARRAGE DU CONTENEUR
 CMD /bin/bash
