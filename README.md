@@ -1,20 +1,22 @@
 # WINE
 
-![wine](https://raw.githubusercontent.com/oda-alexandre/wine/master/img/logo-wine.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/wine/master/img/logo-docker.png)
-
+[![dockeri.co](https://dockeri.co/image/alexandreoda/wine)](https://hub.docker.com/r/alexandreoda/wine)
 
 ## INDEX
 
-- [Build Docker](#BUILD)
+- [Badges](#BADGES)
 - [Introduction](#INTRODUCTION)
 - [Prerequis](#PREREQUIS)
 - [Installation](#INSTALLATION)
 - [License](#LICENSE)
 
 
-## BUILD DOCKER
+## BADGES
 
-[![wine docker build](https://img.shields.io/docker/build/alexandreoda/wine.svg)](https://hub.docker.com/r/alexandreoda/wine)
+[![version](https://images.microbadger.com/badges/version/alexandreoda/wine.svg)](https://microbadger.com/images/alexandreoda/wine)
+[![size](https://images.microbadger.com/badges/image/alexandreoda/wine.svg)](https://microbadger.com/images/alexandreoda/wine")
+[![build](https://img.shields.io/docker/build/alexandreoda/wine.svg)](https://hub.docker.com/r/alexandreoda/wine)
+[![automated](https://img.shields.io/docker/automated/alexandreoda/wine.svg)](https://hub.docker.com/r/alexandreoda/wine)
 
 
 ## INTRODUCTION
