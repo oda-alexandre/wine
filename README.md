@@ -13,10 +13,7 @@
 
 ## BADGES
 
-[![version](https://images.microbadger.com/badges/version/alexandreoda/wine.svg)](https://microbadger.com/images/alexandreoda/wine)
-[![size](https://images.microbadger.com/badges/image/alexandreoda/wine.svg)](https://microbadger.com/images/alexandreoda/wine")
-[![build](https://img.shields.io/docker/build/alexandreoda/wine.svg)](https://hub.docker.com/r/alexandreoda/wine)
-[![automated](https://img.shields.io/docker/automated/alexandreoda/wine.svg)](https://hub.docker.com/r/alexandreoda/wine)
+[![pipeline status](https://gitlab.com/oda-alexandre/wine/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/wine/commits/master)
 
 
 ## INTRODUCTION
