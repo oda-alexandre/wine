@@ -1,6 +1,6 @@
 # WINE
 
-[![dockeri.co](https://dockeri.co/image/alexandreoda/wine)](https://hub.docker.com/r/alexandreoda/wine)
+<img src="https://mintguide.org/uploads/posts/2016-01/1453119587_winehq-logo1-300x173.png"/>
 
 ## INDEX
 
