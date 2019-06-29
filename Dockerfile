@@ -1,12 +1,14 @@
+# IMAGE TO USE
 FROM debian:stretch-slim
 
+# MAINTAINER
 MAINTAINER http://www.oda-alexandre.com/
 
 # VARIABLES
 ENV USER wine
 ENV LANG fr_FR.UTF-8
 
-# INSTALLATION DES PREREQUIS
+# INSTALL PACKAGES
 RUN apt-get update && apt-get install -y --no-install-recommends \
 sudo \
 locales \
@@ -16,31 +18,31 @@ apt-transport-https \
 gnupg \
 wget && \
 
-# SELECTION DE LA LANGUE FRANCAISE
+# CHANGE LOCALES
 echo ${LANG} > /etc/locale.gen && locale-gen && \
 
-# AJOUT UTILISATEUR
+# ADD USER
 useradd -d /home/${USER} -m ${USER} && \
 passwd -d ${USER} && \
 adduser ${USER} sudo
 
-# SELECTION UTILISATEUR
+# SELECT USER
 USER ${USER}
 
-# SELECTION ESPACE DE TRAVAIL
+# SELECT WORKING SPACE
 WORKDIR /home/${USER}
 
-# AJOUT DU REPOS ET DE LA CLEF GPG
+# ADD OF REPOS AND OF THE KEY GPG
 RUN sudo dpkg --add-architecture i386 && \
 wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add - && \
 sudo apt-add-repository https://dl.winehq.org/wine-builds/debian/ && \
 
-# INSTALLATION DE L'APPLICATION
+# INSTALL APP
 sudo apt-get update && sudo apt-get install -y \
 winehq-stable && \
 export PATH=$PATH:/opt/wine-stable/bin && \
 
-# NETTOYAGE
+# CLEANING
 sudo apt-get --purge autoremove -y \
 wget \
 software-properties-common \
@@ -51,5 +53,5 @@ sudo rm /etc/apt/sources.list && \
 sudo rm -rf /var/cache/apt/archives/* && \
 sudo rm -rf /var/lib/apt/lists/*
 
-# COMMANDE AU DEMARRAGE DU CONTENEUR
-CMD /bin/bash
+# START THE CONTAINER
+CMD /bin/bash \
