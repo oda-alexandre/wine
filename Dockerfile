@@ -3,7 +3,7 @@ FROM debian:stretch-slim
 LABEL authors https://www.oda-alexandre.com/
 
 ENV USER wine
-ENV LANG fr_FR.UTF-8
+ENV LOCALES fr_FR.UTF-8
 
 RUN echo -e '\033[36;1m ******* INSTALL PACKAGES ******** \033[0m'; \
 apt-get update && apt-get install -y --no-install-recommends \
@@ -16,7 +16,7 @@ gnupg \
 wget
 
 RUN echo -e '\033[36;1m ******* CHANGE LOCALES ******** \033[0m'; \
-echo ${LANG} > /etc/locale.gen && locale-gen
+locale-gen ${LOCALES}
 
 RUN echo -e '\033[36;1m ******* ADD USER ******** \033[0m'; \
 useradd -d /home/${USER} -m ${USER}; \
