@@ -1,6 +1,6 @@
 # WINE
 
-<img src="https://mintguide.org/uploads/posts/2016-01/1453119587_winehq-logo1-300x173.png" width="200" height="200"/>
+<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904491/wine-logo.png" width="200" height="200"/>
 
 ## INDEX
 
