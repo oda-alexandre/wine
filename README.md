@@ -7,7 +7,6 @@
 - [WINE](#wine)
   - [INDEX](#index)
   - [BADGES](#badges)
-  - [FIRST UPDATE](#first-update)
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
@@ -16,10 +15,6 @@
 ## BADGES
 
 [![pipeline status](https://gitlab.com/oda-alexandre/wine/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/wine/commits/master)
-
-## FIRST UPDATE
-
-Date: 01-01-01
 
 ## INTRODUCTION
 
