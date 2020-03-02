@@ -2,11 +2,13 @@
 
 <img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904491/wine-logo.png" width="200" height="200"/>
 
+
 ## INDEX
 
-  - [WINE](#wine)
+- [WINE](#wine)
   - [INDEX](#index)
   - [BADGES](#badges)
+  - [FIRST UPDATE](#first-update)
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
@@ -16,6 +18,11 @@
 ## BADGES
 
 [![pipeline status](https://gitlab.com/oda-alexandre/wine/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/wine/commits/master)
+
+
+## FIRST UPDATE
+
+Date: 01-01-01
 
 
 ## INTRODUCTION
