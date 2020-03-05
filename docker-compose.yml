@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  wine:
+    container_name: wine
+    image: alexandreoda/wine
+    restart: "no"
+    privileged: false
+    devices:
+      - /dev/snd
+    environment:
+      - DISPLAY
+      - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
+    volumes:
+      - "${HOME}:/home/wine"
+      - "/tmp/.X11-unix/:/tmp/.X11-unix/"
+      - "/dev/shm:/dev/shm"
+      - "/var/run/dbus:/var/run/dbus"
+      - "/etc/localtime:/etc/localtime:ro"
+      - "${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native"
